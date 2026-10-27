@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>“Elbows Up” — An Explainer on Canada’s Response to the U.S. Trade War (2025–2026)</title>
+<meta name="description" content="What “Elbows Up” is, why it happened, how it compares with earlier Canada–U.S. disputes, and the strongest case for and against it. Updated October 27, 2026.">
+<style>
+:root{
+  --red:#c8102e; --red-d:#9d0c24; --ink:#1b1f27; --muted:#5a6270; --bg:#f6f4ef; --card:#ffffff; --line:#e3ded3;
+  --blue:#1f5fa8; --green:#237a57; --amber:#b7791f; --for:#237a57; --against:#8a3b8f; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(135deg,#fff 0%,#fff 55%,#fbe9ec 100%);border-bottom:1px solid var(--line);padding:56px 0 40px;position:relative;overflow:hidden}
+.hero h1{max-width:680px;font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:.2em 0 .3em;letter-spacing:-.02em}
+.hero h1 span{color:var(--red)}
+.hero p.lede{font-size:1.15rem;max-width:720px;color:#2c333f}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.asof{margin-top:14px;font-size:.92rem;color:var(--muted)}
+.hero svg.elbow{position:absolute;right:-20px;top:10px;width:300px;opacity:.9}
+@media(max-width:760px){.hero svg.elbow{display:none}}
+nav.toc{position:sticky;top:0;z-index:20;background:rgba(246,244,239,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.toc ul{list-style:none;margin:0;padding:8px 20px;display:flex;gap:6px;overflow-x:auto;max-width:980px;margin:0 auto;white-space:nowrap}
+nav.toc a{display:block;padding:6px 12px;border-radius:999px;text-decoration:none;color:var(--ink);font-size:.88rem;font-weight:600}
+nav.toc a:hover{background:#fff;box-shadow:0 0 0 1px var(--line)}
+section{padding:46px 0 10px}
+h2{font-size:clamp(1.55rem,3.4vw,2.1rem);line-height:1.2;margin:0 0 .5em;letter-spacing:-.01em}
+h2 .n{display:inline-block;background:var(--red);color:#fff;border-radius:10px;padding:0 .5em;margin-right:.4em;font-size:.8em}
+h3{font-size:1.18rem;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin:18px 0;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.note{border-left:5px solid var(--amber);background:#fff8ea}
+.status{border-left:5px solid var(--red);background:#fff}
+.status h3{margin-top:0}
+.illus{font-size:.82rem;color:var(--muted);font-style:italic;margin-top:6px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:6px;background:#eee;color:#444;margin-right:6px}
+.tag.fact{background:#e6f0fb;color:#144b88}.tag.claim{background:#fdeceb;color:#9d0c24}.tag.est{background:#fff1d6;color:#8a5a00}
+a.c{font-size:.72em;vertical-align:super;text-decoration:none;font-weight:700;padding:0 1px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+.stat{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.stat b{font-size:2rem;color:var(--red);letter-spacing:-.02em}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+/* vertical timeline */
+.tl{position:relative;margin:20px 0 10px;padding-left:34px}
+.tl::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:3px;background:linear-gradient(var(--red),#e8a0ab);transform-origin:top;transition:transform 1.6s ease}
+.js .tl::before{transform:scaleY(0)}
+.js .tl.in::before{transform:scaleY(1)}
+.tl .ev{position:relative;margin:0 0 16px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.tl .ev::before{content:"";position:absolute;left:-30px;top:16px;width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--red)}
+.tl .ev time{font-weight:800;color:var(--red);font-size:.85rem;display:block;letter-spacing:.03em}
+.tl .ev.us::before{border-color:var(--blue)} .tl .ev.us time{color:var(--blue)}
+.tl .ev.ca::before{border-color:var(--red)}
+.legend{display:flex;gap:16px;font-size:.85rem;color:var(--muted);flex-wrap:wrap}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+/* bars */
+.bars{margin:14px 0}
+.bar{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;margin:8px 0;font-size:.92rem}
+.bar .t{height:26px;background:#efece4;border-radius:7px;overflow:hidden;position:relative}
+.bar .t span{position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--red);border-radius:7px;transition:width 1.4s cubic-bezier(.2,.7,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-weight:700;font-size:.8rem;white-space:nowrap}
+.bar.b .t span{background:var(--blue)}.bar.g .t span{background:var(--green)}.bar.gr .t span{background:#8a8f99}
+.js .bar .t span{width:0}
+.js .in .bar .t span{width:var(--w)}
+@media(max-width:560px){.bar{grid-template-columns:1fr}}
+/* flow svg */
+.svgbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:10px;margin:16px 0}
+.svgbox svg{width:100%;height:auto;display:block}
+.dash{stroke-dasharray:10 8;animation:dash 1.2s linear infinite}
+.dash.rev{animation-direction:reverse}
+@keyframes dash{to{stroke-dashoffset:-36}}
+.pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+/* posture track */
+.track{position:relative;margin:26px 8px 8px;height:120px}
+.track .seg{position:absolute;top:28px;height:48px;border-radius:6px;color:#fff;font-size:.72rem;font-weight:700;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.1;padding:0 4px;overflow:hidden}
+.track .dot{position:absolute;top:18px;width:18px;height:68px;border-radius:9px;background:#111;left:0;animation:slide 14s ease-in-out infinite alternate;box-shadow:0 0 0 3px #fff,0 0 0 4px #111}
+@keyframes slide{from{left:0}to{left:calc(100% - 18px)}}
+.track .lab{position:absolute;top:92px;font-size:.72rem;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+/* history cards */
+.hist{border-left:6px solid var(--red)}
+.hist .meta{font-size:.82rem;color:var(--muted);font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.sd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+@media(max-width:720px){.sd{grid-template-columns:1fr}}
+.sd div{border-radius:10px;padding:10px 14px;font-size:.95rem}
+.sd .same{background:#e8f4ee;border:1px solid #bfe0cf}.sd .diff{background:#fdeeee;border:1px solid #f0c4c4}
+.sd b.h{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:2px}
+.sd .same b.h{color:var(--green)}.sd .diff b.h{color:var(--red-d)}
+.htl{display:flex;gap:0;overflow-x:auto;padding:30px 4px 16px;margin:10px 0;position:relative}
+.htl::before{content:"";position:absolute;left:0;right:0;top:38px;height:3px;background:var(--line)}
+.htl .p{flex:0 0 118px;text-align:center;position:relative;font-size:.78rem;line-height:1.25}
+.htl .p::before{content:"";display:block;width:16px;height:16px;border-radius:50%;background:var(--red);border:3px solid #fff;margin:0 auto 8px;box-shadow:0 0 0 1px var(--red);position:relative;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.js .htl .p::before{transform:scale(0)}
+.js .in .htl .p::before{transform:scale(1)}
+.htl .p b{display:block;font-size:.9rem}
+.htl .p:nth-child(2)::before{transition-delay:.15s}.htl .p:nth-child(3)::before{transition-delay:.3s}.htl .p:nth-child(4)::before{transition-delay:.45s}.htl .p:nth-child(5)::before{transition-delay:.6s}.htl .p:nth-child(6)::before{transition-delay:.75s}.htl .p:nth-child(7)::before{transition-delay:.9s}.htl .p:nth-child(8)::before{transition-delay:1.05s}.htl .p:nth-child(9)::before{transition-delay:1.2s}.htl .p:nth-child(10)::before{transition-delay:1.35s}
+/* scale */
+.scalewrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:10px;margin:16px 0}
+.scalewrap svg{width:100%;max-width:560px;display:block;margin:0 auto}
+.beam{transform-box:view-box;transform-origin:200px 70px;animation:rock 7s ease-in-out infinite}
+@keyframes rock{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.panL{animation:panL 7s ease-in-out infinite}.panR{animation:panR 7s ease-in-out infinite}
+@keyframes panL{0%,100%{transform:translateY(-10px)}50%{transform:translateY(10px)}}
+@keyframes panR{0%,100%{transform:translateY(10px)}50%{transform:translateY(-10px)}}
+/* debate */
+.side{border-radius:var(--radius);padding:4px 22px 18px;margin:16px 0;border:1px solid var(--line);background:#fff}
+.side.for{border-top:6px solid var(--for)}.side.against{border-top:6px solid var(--against)}
+.arg{border-top:1px dashed var(--line);padding-top:10px;margin-top:14px}
+.arg h4{margin:.2em 0;font-size:1.05rem}
+.arg .num{display:inline-block;width:26px;height:26px;border-radius:50%;text-align:center;line-height:26px;color:#fff;font-size:.85rem;margin-right:8px}
+.for .num{background:var(--for)}.against .num{background:var(--against)}
+.counter{background:#f3f1ea;border-radius:10px;padding:8px 12px;font-size:.93rem;margin-top:8px}
+.counter b{font-size:.76rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;background:#fff}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#f0ede4}
+.tw{overflow-x:auto}
+ol.src{padding-left:1.4em;font-size:.88rem}
+ol.src li{margin:.35em 0;scroll-margin-top:60px}
+ol.src li:target{background:#fff3b0}
+footer{padding:30px 0 60px;color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv{opacity:1!important;transform:none!important}
+  .js .bar .t span{width:var(--w)!important}
+  .js .tl::before{transform:none!important}
+  .js .htl .p::before{transform:none!important}
+}
+@media(max-width:560px){.track{height:150px}.track .seg{height:76px;font-size:.6rem}.track .dot{height:96px}.track .lab{top:112px;font-size:.62rem}.track .lab:nth-of-type(5){top:2px}}
+</style>
+<script>document.documentElement.className+=' js';</script>
+</head>
+<body>
+<header class="hero">
+  <svg class="elbow" viewBox="0 0 300 240" aria-hidden="true">
+    <path d="M30 210 L120 120 L190 150" fill="none" stroke="#c8102e" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 210 L120 120 L190 150" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+    <circle cx="120" cy="120" r="14" fill="#fff" stroke="#c8102e" stroke-width="6"><animate attributeName="r" values="14;20;14" dur="2.4s" repeatCount="indefinite"/></circle>
+    <g fill="none" stroke="#c8102e" stroke-width="3" stroke-linecap="round" opacity=".6"><path d="M150 70 q20 -20 40 0"><animate attributeName="opacity" values="0;.8;0" dur="2.4s" repeatCount="indefinite"/></path><path d="M140 48 q35 -35 70 0"><animate attributeName="opacity" values="0;.6;0" dur="2.4s" begin=".3s" repeatCount="indefinite"/></path></g>
+  </svg>
+  <div class="wrap">
+    <span class="badge">Explainer · Canada–U.S. trade</span>
+    <h1>“Elbows Up”: <span>what it is, why it happened,</span> and the best case on both sides</h1>
+    <p class="lede">In early 2025, a hockey phrase became Canada’s shorthand for standing up to U.S. tariffs and annexation talk. Twenty months later, the trade war is still unresolved. This page explains the slogan, the history behind it, and gives the strongest version of the argument <em>for</em> and <em>against</em> the approach.</p>
+    <p class="asof"><strong>Status as of October 27, 2026 (America/Vancouver).</strong> Facts here come from the sources linked in each section and listed at the bottom. Where a number is a poll or a model estimate, it is labelled as one. Diagrams marked <em>illustrative</em> are visual aids, not data.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections"><ul>
+  <li><a href="#status">Where things stand</a></li>
+  <li><a href="#what">1 · What it is</a></li>
+  <li><a href="#why">2 · Why it is</a></li>
+  <li><a href="#past">3 · Past parallels</a></li>
+  <li><a href="#for">4 · The case for</a></li>
+  <li><a href="#against">5 · The case against</a></li>
+  <li><a href="#watch">What to watch</a></li>
+  <li><a href="#sources">Sources</a></li>
+</ul></nav>
+
+<main class="wrap">
+
+<section id="status">
+  <div class="card status rv">
+    <h3>Where things stand (Oct 27, 2026) — and two corrections to the popular story</h3>
+    <p><b>1. “Elbows up” has not been a straight line.</b> Canada did <em>not</em> keep all of its 2025 counter-tariffs. On June 29, 2025 it rescinded its 3% digital services tax after President Trump suspended trade talks over it.<a class="c" href="#s1" title="Department of Finance Canada (Jun 29, 2025) — Canada rescinds digital services tax">[1]</a><a class="c" href="#s2" title="Reuters (Jun 30, 2025) — US, Canada to resume trade talks after Ottawa drops digital tax">[2]</a> On August 22, 2025 Prime Minister Carney announced that Canada would drop its tariffs on U.S. goods covered by CUSMA, effective September 1, 2025; the tariffs on U.S. steel, aluminum and autos stayed.<a class="c" href="#s3" title="Prime Minister of Canada (Aug 22, 2025) — Statement on Canada–U.S. trade">[3]</a> CBC reported the duties had covered about $60 billion of U.S. goods;<a class="c" href="#s4" title="CBC News — Most of Canada&#x27;s retaliatory tariffs are gone. Now what?">[4]</a> EY put the repealed list at CA$30.3 billion in annual imports, with the steel/aluminum tariffs and motor-vehicle tariffs retained.<a class="c" href="#s5" title="EY Global Tax News (Sep 19, 2025) — Canada removing tariffs on certain US goods">[5]</a> Critics called it “elbows down”; Carney replied that the game had moved to a different stage.<a class="c" href="#s6" title="CBC News (Aug 2025) — Unfortunately, there may not be a hockey analogy for the challenge Canada faces">[6]</a></p>
+    <p><b>2. The conflict re-escalated in 2026.</b> After a tentative deal collapsed on August 21–22, 2026, the U.S. imposed new 50% tariffs under Section 338 of the Tariff Act of 1930 (effective August 22).<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a><a class="c" href="#s8" title="The White House (Jul 20, 2026) — Fact Sheet: President Trump Imposes Additional Tariffs on Canada">[8]</a> Canada answered with tariffs of 15%, 25% and 50% on roughly C$27.6 billion of U.S. goods, effective September 8, 2026.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a> The U.S. then banned about US$1 billion of Canadian products (alcohol, motorcycles, molasses and whey, among others) from September 29.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></p>
+    <p><b>CUSMA review.</b> At the first joint review on July 1, 2026 the U.S. declined to agree to a new 16-year term. The agreement is <em>not</em> terminated: it remains in force until 2036, but the three countries must now hold a joint review every year until all three confirm an extension.<a class="c" href="#s9" title="USTR (Jul 1, 2026) — Ambassador Greer Issues Statement on the USMCA Joint Review">[9]</a><a class="c" href="#s10" title="Federal Register (Oct 5, 2026) — Request for Public Comments … Relating to the Operation of the [USMCA]">[10]</a><a class="c" href="#s11" title="CBC News (Jul 2, 2026) — Trump isn&#x27;t extending CUSMA trade deal, so what happens now?">[11]</a> USTR opened public comment for the 2027 review (deadline Jan 12, 2027).<a class="c" href="#s10" title="Federal Register (Oct 5, 2026) — Request for Public Comments … Relating to the Operation of the [USMCA]">[10]</a> The publicly tracked bilateral negotiating rounds so far have been U.S.–Mexico.<a class="c" href="#s12" title="ICPA — USMCA Joint Review Tracker (2026 status)">[12]</a></p>
+    <p><b>Latest talks.</b> As of Oct 26, Reuters reports the two governments are working on a possible deal easing U.S. Section 232 tariffs on steel and autos (up to 50% on steel, 25% on autos), but sources on both sides say a broad deal is not imminent; Canada’s chief negotiator says “pens are down, and the doors are open.”<a class="c" href="#s13" title="Reuters via Investing.com (Oct 26, 2026) — US, Canada working on deal to ease steel, auto tariffs, sources say">[13]</a><a class="c" href="#s14" title="CBC News (Oct 26, 2026) — Canada-U.S. trade talks intensifying but wide gap remains, sources say">[14]</a> The U.S. midterms are November 3. On October 30 a further U.S. proclamation takes effect, removing some goods from the 50% list and adding others.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></p>
+  </div>
+</section>
+
+<!-- ============ 1 WHAT ============ -->
+<section id="what">
+  <h2 class="rv"><span class="n">1</span>What “Elbows Up” is</h2>
+  <p class="rv"><b>The phrase.</b> “Elbows up” is hockey language for protecting yourself in a scramble for the puck. Gordie Howe — “Mr. Hockey,” who played from 1946 to 1980 — was first known as “Mr. Elbows,” and his raised elbows are the image the slogan borrows.<a class="c" href="#s15" title="CBC News (Mar 6, 2025) — &#x27;Elbows up&#x27; rallying cry evokes memories of Mr. Hockey">[15]</a><a class="c" href="#s16" title="The Conversation — Why Gordie Howe&#x27;s elbows are Canada&#x27;s answer to Donald Trump">[16]</a> Sources differ on whether he coined it: The Globe and Mail says he did; a biographer quoted by CBC doubts Howe ever used the phrase and says it “grew out of that legend.”<a class="c" href="#s17" title="The Globe and Mail — Why &#x27;elbows up&#x27; is Canada&#x27;s rallying cry">[17]</a><a class="c" href="#s15" title="CBC News (Mar 6, 2025) — &#x27;Elbows up&#x27; rallying cry evokes memories of Mr. Hockey">[15]</a> Commentators also stress that the move is defensive: you use elbows to ward off an opponent coming at you, not to start the fight.<a class="c" href="#s18" title="CBC News — #ElbowsUp: Why have Canadians chosen hockey as the symbol of our national unity?">[18]</a></p>
+
+  <h3 class="rv">How it spread</h3>
+  <div class="tl rv" id="tl-phrase">
+    <div class="ev ca"><time>Early 2025</time>Manitoba Premier Wab Kinew says Canada “can’t be a punching bag, and we have to get our elbows up.”<a class="c" href="#s15" title="CBC News (Mar 6, 2025) — &#x27;Elbows up&#x27; rallying cry evokes memories of Mr. Hockey">[15]</a></div>
+    <div class="ev ca"><time>March 1, 2025</time>On <em>Saturday Night Live</em>, Mike Myers opens his jacket to reveal a “Canada is not for sale” T-shirt and mouths “elbows up,” tapping his elbow.<a class="c" href="#s17" title="The Globe and Mail — Why &#x27;elbows up&#x27; is Canada&#x27;s rallying cry">[17]</a><a class="c" href="#s19" title="CBC News (Jul 1, 2025) — Mike Myers on elbows up">[19]</a> He later said he was thinking of Gordie Howe and that the point was “Leave us alone… we can love Americans and not want to be Americans.”<a class="c" href="#s19" title="CBC News (Jul 1, 2025) — Mike Myers on elbows up">[19]</a></div>
+    <div class="ev ca"><time>March 2025</time>Protests at the U.S. Embassy in Ottawa and an “Elbows Up Canada” rally on Parliament Hill (March 9) put the phrase on placards; it spreads to T-shirts, caps, mugs and bumper stickers.<a class="c" href="#s15" title="CBC News (Mar 6, 2025) — &#x27;Elbows up&#x27; rallying cry evokes memories of Mr. Hockey">[15]</a><a class="c" href="#s17" title="The Globe and Mail — Why &#x27;elbows up&#x27; is Canada&#x27;s rallying cry">[17]</a><a class="c" href="#s19" title="CBC News (Jul 1, 2025) — Mike Myers on elbows up">[19]</a></div>
+    <div class="ev ca"><time>March 2025</time>In his first speech as Liberal leader, Mark Carney says: “We didn’t ask for this fight, but Canadians are always ready when someone else drops the gloves… In trade, as in hockey, Canada will win.”<a class="c" href="#s16" title="The Conversation — Why Gordie Howe&#x27;s elbows are Canada&#x27;s answer to Donald Trump">[16]</a></div>
+    <div class="ev ca"><time>Spring 2025</time>A Carney campaign ad shows him and Myers as “hockey dads,” Myers in a “Never 51” jersey.<a class="c" href="#s19" title="CBC News (Jul 1, 2025) — Mike Myers on elbows up">[19]</a></div>
+    <div class="ev ca"><time>Aug 2025</time>When Ottawa drops most counter-tariffs, opposition leader Pierre Poilievre says Carney’s “elbows have mysteriously gone missing.” Carney answers that there is “a time in a game… when you go hard in the corners with your elbows up,” and a time to “put the puck in the net.”<a class="c" href="#s6" title="CBC News (Aug 2025) — Unfortunately, there may not be a hockey analogy for the challenge Canada faces">[6]</a></div>
+  </div>
+
+  <h3 class="rv">Elbows up in practice: four layers</h3>
+  <div class="grid2">
+    <div class="card rv"><b>1 · Consumers.</b> Buy-Canadian shopping, cancelled U.S. trips, avoiding U.S. brands. Abacus Data finds 77% of Canadians (Sept 2026) say they will avoid American products entirely or buy as few as they can — statistically unchanged from 78% in Feb 2025.<a class="c" href="#s20" title="Abacus Data (Oct 1, 2026) — Nineteen months on, the Buy Canadian shopper has not gone home">[20]</a></div>
+    <div class="card rv"><b>2 · Provinces.</b> Ontario ordered its LCBO to clear U.S. brands; the Distilled Spirits Council says all provinces but Alberta and Saskatchewan followed.<a class="c" href="#s21" title="The Deep Dive (May 11, 2026) — Canada&#x27;s Booze Bans Wiped Out $536M in US Alcohol Exports (citing Distilled Spirits Council testimony)">[21]</a></div>
+    <div class="card rv"><b>3 · Ottawa.</b> Counter-tariffs (2025, trimmed Sept 2025, re-escalated Sept 2026), the Buy Canadian procurement policy, and tighter steel quotas.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a><a class="c" href="#s22" title="Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries">[22]</a></div>
+    <div class="card rv"><b>4 · Diversification.</b> Carney’s January 2026 Davos speech called the old rules-based order a “rupture”; Canada struck a deal with China (EVs, canola) and others — Carney said it is not a free-trade agreement.<a class="c" href="#s23" title="CBC News (Jan 2026) — &#x27;The old order is not coming back,&#x27; Carney says at Davos">[23]</a><a class="c" href="#s24" title="BBC News — China says Canada deal does not target the US after Trump tariff threat">[24]</a></div>
+  </div>
+
+  <h3 class="rv">Diagram: how “up” has Canada actually been? <span class="tag est">illustrative</span></h3>
+  <div class="card rv" id="posture">
+    <div class="track" aria-label="Illustrative timeline of Canada's posture">
+      <div class="seg" style="left:0;width:40%;background:#c8102e">Mar–Aug 2025<br>Broad counter-tariffs (with carve-outs)</div>
+      <div class="seg" style="left:40%;width:32%;background:#e08a98;color:#4a0b16">Sep 2025–Aug 2026<br>Narrowed to steel · aluminum · autos</div>
+      <div class="seg" style="left:72%;width:28%;background:#9d0c24">From Sep 8, 2026<br>New C$27.6B round</div>
+      <div class="lab" style="left:24%">Jun 29 ’25: DST dropped</div>
+      <div class="lab" style="left:40%;top:4px">Sep 1 ’25: most dropped</div>
+      <div class="lab" style="left:72%">Aug 22 ’26: talks collapse</div>
+      <div class="dot"></div>
+    </div>
+    <p class="illus">Illustrative: segment widths are not to scale, and the shading is only a rough sense of how broad the counter-tariffs were — see the dated sources above for the actual lists. The moving marker is just an animation.</p>
+  </div>
+
+  <h3 class="rv">Boycott effects, measured</h3>
+  <div class="grid2">
+    <div class="card rv bars-wrap">
+      <b>Canadian car trips returning from the U.S., August</b>
+      <div class="bars">
+        <div class="bar"><span>2024</span><div class="t"><span style="--w:100%">2.94 M</span></div></div>
+        <div class="bar"><span>2025</span><div class="t"><span style="--w:66%">1.94 M</span></div></div>
+        <div class="bar"><span>2026 (prelim.)</span><div class="t"><span style="--w:72.6%">2.14 M</span></div></div>
+      </div>
+      <p>Aug 2026 car return trips were 10% above Aug 2025 but still about 27% below Aug 2024 (2,136,319 vs 2,942,346).<a class="c" href="#s25" title="Statistics Canada — Canadian-resident return trips, August, 2024 to 2026 (Chart 3)">[25]</a> Total Canadian return trips from the U.S. fell year-over-year for 15 straight months (to March 2026), then rose in each of April–July 2026; in July they were still 25.6% below July 2024.<a class="c" href="#s26" title="Statistics Canada, The Daily — Travel between Canada and other countries, July 2026">[26]</a> In January 2026 trips from overseas by Canadians (1.5M) exceeded car trips from the U.S. (1.3M) for the first time since digital border counts began in 1972 (excluding the pandemic).<a class="c" href="#s27" title="Statistics Canada, The Daily — Travel between Canada and other countries, January 2026">[27]</a></p>
+      <p class="illus">Chart: bars drawn to scale from Statistics Canada figures.</p>
+    </div>
+    <div class="card rv bars-wrap">
+      <b>U.S. alcohol exports to Canada (US$ millions)</b>
+      <div class="bars">
+        <div class="bar b"><span>2024 total</span><div class="t"><span style="--w:100%">744</span></div></div>
+        <div class="bar b"><span>2025 total</span><div class="t"><span style="--w:28%">208</span></div></div>
+        <div class="bar g"><span>2024 spirits</span><div class="t"><span style="--w:32%">238</span></div></div>
+        <div class="bar g"><span>2025 spirits</span><div class="t"><span style="--w:12%">89</span></div></div>
+      </div>
+      <p>Figures are from U.S. industry testimony to USTR (Distilled Spirits Council), reported by The Deep Dive.<a class="c" href="#s21" title="The Deep Dive (May 11, 2026) — Canada&#x27;s Booze Bans Wiped Out $536M in US Alcohol Exports (citing Distilled Spirits Council testimony)">[21]</a> The U.S. government cites a similar picture: imports of U.S. alcoholic beverages down about 81% (US$582 million) from March 2025–Feb 2026.<a class="c" href="#s8" title="The White House (Jul 20, 2026) — Fact Sheet: President Trump Imposes Additional Tariffs on Canada">[8]</a> Ontario’s LCBO still holds roughly $79 million of U.S. alcohol, costing about $8 million to store.<a class="c" href="#s28" title="CBC News — Ontario runs $8M tab storing U.S. alcohol">[28]</a></p>
+      <p class="illus">Chart: bars drawn to scale from the cited figures.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 WHY ============ -->
+<section id="why">
+  <h2 class="rv"><span class="n">2</span>Why it is: tariffs, annexation talk, and an unstable trade deal</h2>
+  <p class="rv"><b>The spark.</b> After a late-November 2024 dinner at Mar-a-Lago, reports said Trump told Justin Trudeau that if a 25% tariff would “kill” the Canadian economy, Canada could become the 51st state. A Canadian minister at the table said it was a joke.<a class="c" href="#s29" title="Fox News (Dec 2024) — Trump suggests Canada become 51st state … sources say">[29]</a><a class="c" href="#s30" title="CBC News (Dec 2024) — Trump&#x27;s quip about Canada becoming 51st state was a joke, says minister">[30]</a> Trump then called Trudeau “Governor” of the “Great State of Canada” and described the U.S. trade deficit with Canada as a subsidy: “If we’re going to subsidize them, let them become a state.”<a class="c" href="#s31" title="NBC News (Dec 2024) — Trump mocks Trudeau as &#x27;governor&#x27; of the &#x27;Great State of Canada&#x27;">[31]</a> The sequence mattered: for many Canadians a trade dispute became a question of sovereignty — which helps explain why the T-shirt said “Canada is not for sale,” not “lower tariffs.”<a class="c" href="#s19" title="CBC News (Jul 1, 2025) — Mike Myers on elbows up">[19]</a></p>
+
+  <h3 class="rv">Diagram: how dependent is Canada on the U.S. market? <span class="tag est">illustrative arrows</span></h3>
+  <div class="svgbox rv">
+    <svg viewBox="0 0 820 270" role="img" aria-label="Animated arrows showing Canada's goods exports flowing mostly to the United States">
+      <rect x="20" y="60" width="200" height="130" rx="16" fill="#fbe9ec" stroke="#c8102e" stroke-width="3"/>
+      <text x="120" y="108" text-anchor="middle" font-size="26" font-weight="800" fill="#9d0c24">CANADA</text>
+      <text x="120" y="136" text-anchor="middle" font-size="13" fill="#444">exports goods to:</text>
+      <rect x="600" y="30" width="200" height="110" rx="16" fill="#e6f0fb" stroke="#1f5fa8" stroke-width="3"/>
+      <text x="700" y="82" text-anchor="middle" font-size="26" font-weight="800" fill="#144b88">U.S.</text>
+      <text x="700" y="108" text-anchor="middle" font-size="13" fill="#444">71.7% of goods exports (2025)</text>
+      <rect x="600" y="170" width="200" height="80" rx="16" fill="#eef5ef" stroke="#237a57" stroke-width="3"/>
+      <text x="700" y="206" text-anchor="middle" font-size="20" font-weight="800" fill="#1b5e43">REST OF WORLD</text>
+      <text x="700" y="230" text-anchor="middle" font-size="13" fill="#444">remainder: 28.3% (2025)</text>
+      <path class="dash" d="M222 100 C 380 90, 460 75, 598 80" fill="none" stroke="#1f5fa8" stroke-width="16" stroke-linecap="butt"/>
+      <path class="dash" d="M222 150 C 380 175, 460 205, 598 208" fill="none" stroke="#237a57" stroke-width="6"/>
+      <g class="pulse"><rect x="360" y="52" width="86" height="30" rx="8" fill="#fff" stroke="#c8102e" stroke-width="2"/><text x="403" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#9d0c24">tariff gate</text></g>
+      <text x="410" y="258" text-anchor="middle" font-size="12" fill="#666">Arrow thickness is illustrative; the percentages are from Global Affairs Canada.</text>
+    </svg>
+  </div>
+  <div class="card rv">
+    <b>Share of Canadian goods exports going to the U.S.</b>
+    <div class="bars">
+      <div class="bar b"><span>2024</span><div class="t"><span style="--w:75.9%">75.9%</span></div></div>
+      <div class="bar b"><span>2025</span><div class="t"><span style="--w:71.7%">71.7%</span></div></div>
+      <div class="bar b"><span>Aug 2026 (month)</span><div class="t"><span style="--w:69.8%">69.8%</span></div></div>
+    </div>
+    <p>The 2025 share (71.7%) was the lowest since the early 1980s.<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a> In August 2026 non-U.S. destinations took 30.2% of exports (33.9% in July).<a class="c" href="#s33" title="Statistics Canada, The Daily — Canadian international merchandise trade, August 2026">[33]</a> <em>Caveat:</em> a lot of the non-U.S. growth is gold; excluding it, Canada’s 2025 exports of goods and services dipped 1.5%.<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a></p>
+  </div>
+
+  <h3 class="rv">The tariff-war timeline</h3>
+  <div class="legend rv"><span><i style="background:#1f5fa8"></i>U.S. action</span><span><i style="background:#c8102e"></i>Canadian action</span></div>
+  <div class="tl rv">
+    <div class="ev us"><time>Feb 1, 2025</time>U.S. order imposes 25% tariffs (10% on energy) on Canada, citing drugs at the northern border. Canada announces a 25% counter-tariff on C$30 billion of U.S. goods.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Mar 4–7, 2025</time>U.S. tariffs take effect; Canada’s first counter-tariffs take effect. Three days later the U.S. exempts CUSMA-compliant goods.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Mar 12–13, 2025</time>U.S. 25% tariffs on steel and aluminum; Canada counters with 25% on a further C$29.8 billion (steel C$12.6B, aluminum C$3B, other goods C$14.2B).<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Apr 3–9, 2025</time>U.S. 25% tariff on autos; Canada imposes 25% on non-CUSMA U.S. vehicles and on the U.S. content of CUSMA-compliant ones.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Jun 4, 2025</time>U.S. steel/aluminum tariffs rise to 50%.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev ca"><time>Jun 29, 2025</time>Canada rescinds its digital services tax after Trump suspends talks.<a class="c" href="#s1" title="Department of Finance Canada (Jun 29, 2025) — Canada rescinds digital services tax">[1]</a></div>
+    <div class="ev us"><time>Aug 1, 2025</time>U.S. tariff on non-CUSMA Canadian goods rises from 25% to 35%.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev ca"><time>Sep 1, 2025</time>Canada removes counter-tariffs on CUSMA-covered U.S. goods; keeps steel, aluminum, auto tariffs.<a class="c" href="#s3" title="Prime Minister of Canada (Aug 22, 2025) — Statement on Canada–U.S. trade">[3]</a><a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Oct 14, 2025</time>U.S. 10% tariff on softwood lumber (on top of existing duties) and 25% on some furniture/cabinets; no CUSMA exemption.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Feb 20, 2026</time>U.S. Supreme Court strikes down the IEEPA tariffs (including the 2025 “fentanyl” tariffs on Canada). Section 232 tariffs on steel, aluminum, autos, lumber and others remain.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev us"><time>Jul 1, 2026</time>CUSMA joint review: U.S. declines a 16-year extension; agreement stays in force; annual reviews begin.<a class="c" href="#s9" title="USTR (Jul 1, 2026) — Ambassador Greer Issues Statement on the USMCA Joint Review">[9]</a></div>
+    <div class="ev us"><time>Jul 20, 2026</time>Trump signs Section 338 proclamations: 50% tariffs on a broad list of Canadian goods, citing Canada’s treatment of U.S. cars, alcohol and dairy; effective Aug 22 after talks fail.<a class="c" href="#s8" title="The White House (Jul 20, 2026) — Fact Sheet: President Trump Imposes Additional Tariffs on Canada">[8]</a><a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev ca"><time>Sep 8, 2026</time>Canada’s “dollar-for-dollar” response: 15/25/50% on ~C$27.6B of U.S. goods, plus $7.5B in worker and business support.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a><a class="c" href="#s34" title="CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator">[34]</a></div>
+    <div class="ev us"><time>Sep 29, 2026</time>U.S. bans imports of nearly US$1B of Canadian goods (alcohol, motorcycles, molasses, whey).<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div>
+    <div class="ev"><time>Oct 2026</time>Alberta voters reject starting a separation process (~75% to 25%);<a class="c" href="#s35" title="AP News — Alberta voters overwhelmingly reject separation process">[35]</a> PBO estimates the combined trade measures lower Canada’s real GDP by 1.4% after five years;<a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a> talks “intensify” without a deal.<a class="c" href="#s14" title="CBC News (Oct 26, 2026) — Canada-U.S. trade talks intensifying but wide gap remains, sources say">[14]</a></div>
+  </div>
+
+  <div class="card note rv"><b>Why each side says it happened</b>
+    <p><span class="tag claim">U.S. position</span> Canada discriminates against U.S. commerce: tariffs and quotas on U.S. cars (U.S. vehicle exports to Canada fell about 22%, or $5.6B, April 2025–March 2026 by the White House’s count), provincial bans on U.S. alcohol, and restrictive dairy quotas. The White House adds that only China and Canada retaliated rather than negotiate.<a class="c" href="#s8" title="The White House (Jul 20, 2026) — Fact Sheet: President Trump Imposes Additional Tariffs on Canada">[8]</a><a class="c" href="#s37" title="Federal Register (Jul 23, 2026) — Imposing Additional Duties To Offset Canadian Discrimination … Motor Vehicles">[37]</a></p>
+    <p><span class="tag claim">Canadian position</span> Canada says the U.S. broke the CUSMA bargain it signed in 2018, and that U.S. negotiators added last-minute demands in August 2026 — on auto tariff scope, on limiting Canada’s other trade deals, and on language and cultural protections like French-language streaming “discoverability.” U.S. officials dispute this (Lutnick said Carney “manufactured” the French issue); Canada’s negotiator disputes the U.S. account of last-minute truck demands.<a class="c" href="#s34" title="CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator">[34]</a><a class="c" href="#s38" title="C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future">[38]</a></p>
+  </div>
+</section>
+
+<!-- ============ 3 PAST ============ -->
+<section id="past">
+  <h2 class="rv"><span class="n">3</span>Similar past events: what’s the same, what’s different</h2>
+  <p class="rv">Canadian politics has a long history of wrestling with the same two questions: <em>how much do we want to be integrated with the U.S.,</em> and <em>what do we do when the U.S. uses that integration as leverage?</em></p>
+  <div class="rv" id="htl-wrap"><div class="htl">
+    <div class="p"><b>1911</b>Reciprocity election</div>
+    <div class="p"><b>1957–58</b>Diefenbaker’s 15% pivot</div>
+    <div class="p"><b>1965</b>Auto Pact</div>
+    <div class="p"><b>1972–80</b>Third Option, FIRA, NEP</div>
+    <div class="p"><b>1988</b>Free-trade election</div>
+    <div class="p"><b>1982–2017</b>Softwood lumber</div>
+    <div class="p"><b>2018–19</b>Steel retaliation</div>
+    <div class="p"><b>2012 / 2025</b>China–Japan</div>
+    <div class="p"><b>2025–26</b>Denmark–Greenland</div>
+  </div><p class="illus">Illustrative order of events; not to scale.</p></div>
+
+  <article class="card hist rv"><div class="meta">1911 · The reciprocity election</div>
+    <h3>Canada votes against closer U.S. trade—and annexation fears decide it</h3>
+    <p>Wilfrid Laurier’s Liberals proposed a reciprocity (free-trade) agreement with the U.S. It had little support in Ontario and Quebec, where voters feared an invasion of American products and eventually political annexation. Laurier lost to Robert Borden’s Conservatives.<a class="c" href="#s39" title="Parks Canada — Sir Wilfrid Laurier National Historic Site: The end of a long reign">[39]</a> The campaign was inflamed by U.S. House Speaker Champ Clark’s remark that he hoped to see the American flag fly over British North America.<a class="c" href="#s40" title="A City Goes to War — 1911 Election: Reciprocity">[40]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>Annexation talk from Washington turns an economic question into a question of national identity, and the voters side with “not for sale.”</div><div class="diff"><b class="h">Different</b>In 1911 Canadians were rejecting a <em>deal</em> offering <em>more</em> U.S. access; in 2025 they are resisting <em>coercion</em> of an existing integrated relationship. And the 1911 vote was muddied by another issue, the Naval Service Bill.<a class="c" href="#s39" title="Parks Canada — Sir Wilfrid Laurier National Historic Site: The end of a long reign">[39]</a></div></div></article>
+
+  <article class="card hist rv"><div class="meta">1957–58 · Diefenbaker’s trade pivot</div>
+    <h3>“Divert 15%” of imports from the U.S. to Britain</h3>
+    <p>Soon after taking office in 1957, Prime Minister John Diefenbaker asked for a plan to redirect about 15% of Canadian imports from the U.S. to the U.K. A secret memo from the Prime Minister’s adviser said the pattern of trade reflected far more than commercial policy and that moving 15% “would require quite drastic action.”<a class="c" href="#s41" title="Diefenbaker Canada Centre — The Crown in Canada (incl. Aug 12, 1957 Bryce memo)">[41]</a> Scholars conclude the policy ended up “pretty much where the Liberals had been” — increasingly reliant on the U.S. market.<a class="c" href="#s42" title="Études internationales — From Dreams to Reality: The Evolution of Anglo-Canadian Trade During the Diefenbaker Era">[42]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>A leader tries to reduce dependence on the U.S. as a point of national policy. Today’s diversification push faces the same gravity: the BoC reports many firms say moving trade away from the U.S. is difficult because of transport costs to farther markets.<a class="c" href="#s22" title="Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries">[22]</a></div><div class="diff"><b class="h">Different</b>In 1957 diversification was a policy preference toward a single partner (Britain); in 2025–26 it is a reaction to tariffs and is spread across many partners. So far the U.S. share has fallen from 75.9% (2024) to 71.7% (2025) — movement, but nothing like a 15-point swing.<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a></div></div></article>
+
+  <article class="card hist rv"><div class="meta">1965 · The Auto Pact</div>
+    <h3>A negotiated answer to the same industry now in the crossfire</h3>
+    <p>Pearson and Johnson signed the Canada–U.S. Automotive Products Agreement on January 16, 1965 — a managed, integrated North American auto market with safeguards meant to preserve Canadian production and value added.<a class="c" href="#s43" title="The Canadian Encyclopedia — Canada-US Auto Pact">[43]</a> The logic echoes in 2026: the U.S. Section 338 proclamation objects to Canadian tariff-rate quotas that it says push automakers to invest in Canada rather than the U.S.<a class="c" href="#s37" title="Federal Register (Jul 23, 2026) — Imposing Additional Duties To Offset Canadian Discrimination … Motor Vehicles">[37]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>Autos are where integration and national-economic interest collide; each country wants production on its side of the border.</div><div class="diff"><b class="h">Different</b>The Auto Pact was a negotiated, mutually agreed arrangement. Today’s fight is over tariffs imposed unilaterally and retaliation, not a bargain both sides have signed.</div></div></article>
+
+  <article class="card hist rv"><div class="meta">1972–1985 · The Third Option, FIRA and the National Energy Program</div>
+    <h3>Canadian-initiated nationalism: reduce dependence on purpose</h3>
+    <p>In 1972 Mitchell Sharp proposed a “Third Option”: lessen reliance on the U.S. through trade diversification, Canadian ownership and industrial strategy. It fed into the Foreign Investment Review Agency (screening foreign takeovers), Petro-Canada (1975), and the 1980 National Energy Program.<a class="c" href="#s44" title="The Canadian Encyclopedia — Third Option">[44]</a><a class="c" href="#s45" title="The Canadian Encyclopedia — National Energy Program">[45]</a> Brian Mulroney’s government replaced FIRA with the Investment Canada Act in June 1985, and the NEP was ended by the Western Accord on Energy, effective June 1, 1985.<a class="c" href="#s46" title="Library of Parliament — The Foreign Investment Review Process in Canada">[46]</a><a class="c" href="#s45" title="The Canadian Encyclopedia — National Energy Program">[45]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>Use state power to reduce U.S. leverage over the Canadian economy — Buy Canadian policy, domestic steel quotas and diversification deals are cousins of the Third Option.<a class="c" href="#s22" title="Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries">[22]</a></div><div class="diff"><b class="h">Different</b>Those policies were chosen at home, not in answer to a U.S. tariff war on Canada, and both were replaced or ended by 1985; the open question is whether today’s version will last.</div></div></article>
+
+  <article class="card hist rv"><div class="meta">1988 · The free-trade election</div>
+    <h3>The great debate over sovereignty versus access</h3>
+    <p>The 1988 election was fought over the Canada–U.S. Free Trade Agreement. Mulroney’s Progressive Conservatives won 169 of 295 seats with 43.01% of the vote; the Liberals (31.91%) and NDP (20.38%) — both opposed — together took about 52.3%.<a class="c" href="#s47" title="IPU Parline — Canada: House of Commons, 1988 election results">[47]</a><a class="c" href="#s48" title="The Canadian Encyclopedia — Election of 1988">[48]</a> The agreement took effect January 1, 1989 and is the ancestor of CUSMA.</p>
+    <div class="sd"><div class="same"><b class="h">Same</b>The sovereignty argument (“a deal with the elephant leaves us vulnerable”) is back. Opponents of the 1988 agreement made the sovereignty argument; supporters made the access argument.</div><div class="diff"><b class="h">Different</b>1988 was a split country; 2025–26 is closer to a consensus on <em>attitude</em> — Angus Reid found 76% say walking away from talks was right, a majority in every province, though only 53% of 2025 Conservative voters agreed.<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a> Disagreement now is about <em>tactics</em> and cost.</div></div></article>
+
+  <article class="card hist rv"><div class="meta">1982–2017 · Softwood lumber</div>
+    <h3>Decades of U.S. trade remedies, answered with lawyers and settlements</h3>
+    <p>Canada–U.S. softwood lumber disputes have run in repeating rounds: Lumber I (1982–83) ended without duties; a 15% tax under an MOU followed in 1986; a 1996 agreement set export fees to 2001; duties returned in 2001–05; a 2006 agreement lasted to October 2015; a fifth round began in 2016 and final duties were assessed Nov 2, 2017.<a class="c" href="#s50" title="Congressional Research Service — Softwood Lumber Imports from Canada: Issues and Events">[50]</a> U.S. lumber tariffs rose again in October 2025.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a> The BoC notes lumber exports were about 20% below their 2024 average by February 2026, partly from “long-lasting trade disputes that predate recent tariffs.”<a class="c" href="#s22" title="Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries">[22]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>The U.S. uses trade law against a major Canadian industry; Canadian exporters, workers and governments absorb costs for years.</div><div class="diff"><b class="h">Different</b>Softwood was one product with a legal remedy process and recurring settlements; the 2025–26 conflict spans many sectors, mixes national-security and “discrimination” rationales, and arrives with annexation rhetoric.</div></div></article>
+
+  <article class="card hist rv"><div class="meta">2018–19 · Steel and aluminum, round one</div>
+    <h3>“Dollar-for-dollar” retaliation that did work (eventually)</h3>
+    <p>When the U.S. imposed Section 232 tariffs on steel and aluminum in 2018, Canada responded with surtaxes effective July 1, 2018 on about C$16.6 billion of U.S. goods — matching the value of affected Canadian exports — 25% on steel and 10% on aluminum and other goods.<a class="c" href="#s51" title="Department of Finance Canada — Countermeasures in Response to Unjustified Tariffs on Canadian Steel and Aluminum Products (archived)">[51]</a> Canada repealed them effective May 19, 2019, after the U.S. agreed to lift its tariffs.<a class="c" href="#s52" title="CBSA — Customs Notice 19-09: Repeal of the United States Surtax Orders (2019)">[52]</a> In December 2024 Trudeau pledged to respond to new tariffs “as we did eight years ago.”<a class="c" href="#s31" title="NBC News (Dec 2024) — Trump mocks Trudeau as &#x27;governor&#x27; of the &#x27;Great State of Canada&#x27;">[31]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>Same tool (Section 232), same playbook (matching counter-tariffs, a political rally-round-the-flag), and in 2026 Canada again says it will match U.S. tariffs “dollar for dollar.”<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a></div><div class="diff"><b class="h">Different</b>The 2018–19 episode ended in roughly eleven months with a bargain; the current one has run about twenty months with the scope widened to autos, lumber and a broad 50% list — and with U.S. rhetoric about statehood.</div></div></article>
+
+  <article class="card hist rv"><div class="meta">2012 & 2025 · China versus Japan</div>
+    <h3>When consumer anger becomes a state tool</h3>
+    <p>In 2012, China’s Senkaku/Diaoyu dispute with Japan triggered a boycott: September sales fell about 49% for Toyota, 41% for Honda and 35% for Nissan in China.<a class="c" href="#s53" title="CNBC (Oct 2012) — Japan economy shaky as island spat hits business">[53]</a> In late 2025 China answered Japan’s prime minister’s Taiwan remarks with a travel advisory and a suspension of seafood imports; Reuters reported cancellations and sharply lower Chinese arrivals in Japan, while The Straits Times noted Chinese consumers kept buying Japanese goods this time.<a class="c" href="#s54" title="Reuters (Nov 19, 2025) — Japan counts cost of China&#x27;s travel boycott as tensions flare">[54]</a><a class="c" href="#s55" title="The Straits Times — China&#x27;s consumers still buying sushi, Japanese cars as Xi keeps spat in check">[55]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>A consumer boycott aimed at a trading partner after a political insult, with real damage to specific sectors (cars then; tourism and seafood now).</div><div class="diff"><b class="h">Different</b>Canada’s campaign began at the grass roots and is sustained mostly by consumers, with provinces joining — not a central government “advisory” aimed at a smaller neighbour. And Canada is the <em>smaller</em> economy in this fight, which changes the leverage maths.<a class="c" href="#s38" title="C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future">[38]</a></div></div></article>
+
+  <article class="card hist rv"><div class="meta">2025–26 · Denmark & Greenland</div>
+    <h3>Another U.S. ally tries a boycott — with modest measurable effect</h3>
+    <p>After U.S. pressure over Greenland, Danes downloaded apps to boycott U.S. goods.<a class="c" href="#s56" title="AP News — Apps to boycott US goods gained traction in crisis over Greenland">[56]</a> A Coop survey found about one in four Danes cut U.S. grocery purchases but only about one in ten cut U.S. tech or entertainment;<a class="c" href="#s57" title="Coop Analyse (Denmark) — Danskerne boykotter mad, ikke underholdning">[57]</a> Danish reporting found supermarkets noticed little change, in part because only a small share of Danish grocery products are made in the U.S. (about 1–3%), with effects visible in niches like U.S. wine.<a class="c" href="#s58" title="DR (Denmark) — Når Trump er stille, glemmer kunder at boykotte varer fra USA">[58]</a><a class="c" href="#s56" title="AP News — Apps to boycott US goods gained traction in crisis over Greenland">[56]</a></p>
+    <div class="sd"><div class="same"><b class="h">Same</b>Citizen-led “buy local” politics aimed at the U.S. after territorial rhetoric, backed by apps and labelling.</div><div class="diff"><b class="h">Different</b>Canada’s boycott is larger, longer and more government-supported (provincial shelf removals), and Canada buys far more U.S. goods than Denmark. That makes both the impact and the self-inflicted cost bigger.</div></div></article>
+</section>
+
+<!-- ============ 4 FOR ============ -->
+<section id="for">
+  <h2 class="rv"><span class="n">4</span>Steelman: the case <em>for</em> “Elbows Up”</h2>
+  <div class="scalewrap rv">
+    <svg viewBox="0 0 400 260" role="img" aria-label="Animated balance scale: For and Against">
+      <rect x="196" y="70" width="8" height="150" fill="#555"/><rect x="150" y="218" width="100" height="14" rx="5" fill="#555"/>
+      <g class="beam">
+        <rect x="50" y="64" width="300" height="10" rx="5" fill="#333"/>
+        <g class="panL"><line x1="62" y1="74" x2="40" y2="140" stroke="#555" stroke-width="2"/><line x1="62" y1="74" x2="84" y2="140" stroke="#555" stroke-width="2"/><path d="M26 140 h72 a0 0 0 0 1 0 0 q-8 28 -36 28 q-28 0 -36 -28z" fill="#237a57"/><text x="62" y="160" text-anchor="middle" font-size="14" fill="#fff" font-weight="700">FOR</text><text x="62" y="188" text-anchor="middle" font-size="11" fill="#237a57">leverage · unity</text></g>
+        <g class="panR"><line x1="338" y1="74" x2="316" y2="140" stroke="#555" stroke-width="2"/><line x1="338" y1="74" x2="360" y2="140" stroke="#555" stroke-width="2"/><path d="M302 140 h72 q-8 28 -36 28 q-28 0 -36 -28z" fill="#8a3b8f"/><text x="338" y="158" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">AGAINST</text><text x="338" y="188" text-anchor="middle" font-size="11" fill="#8a3b8f">cost · asymmetry</text></g>
+      </g>
+      <circle cx="200" cy="70" r="9" fill="#c8102e"/>
+    </svg>
+    <p class="illus" style="text-align:center">Illustrative: the scale rocks because informed people weigh these arguments differently — it does not report a verdict.</p>
+  </div>
+  <p class="rv">This is the best version of the argument as its supporters would make it. The “strongest objection” under each point is the best reply from the other side.</p>
+
+  <div class="side for rv">
+    <div class="arg"><h4><span class="num">1</span>Backing down didn’t buy peace — and standing firm may be the only language Washington respects</h4>
+    <p>Canada paid for conciliation in 2025: it scrapped the digital services tax on June 29 to get talks restarted, and the White House press secretary said Carney “caved.”<a class="c" href="#s2" title="Reuters (Jun 30, 2025) — US, Canada to resume trade talks after Ottawa drops digital tax">[2]</a> In August 2025 it dropped most counter-tariffs. Yet U.S. tariffs on steel, aluminum, autos and lumber persisted and a new 50% round came in 2026.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a> As late as August 18, 2026 an outline of a deal looked possible; former chief CUSMA negotiator Steve Verheul argues it would have been a “major dilution” of Canada’s principle of tariff-free CUSMA trade, with partial sectoral relief, demands well beyond tariffs, and a requirement to align Canada’s external tariffs with U.S. Section 232 decisions — which he says would breach Canada’s other trade agreements and amount to a “Fortress North America” where “one ruler” dictates.<a class="c" href="#s38" title="C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future">[38]</a></p>
+    <div class="counter"><b>Strongest objection</b> The U.S. says its August offer was real and Canada killed it with last-minute demands; Canada’s negotiator says the truck issue was raised all week.<a class="c" href="#s34" title="CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator">[34]</a> We only have a partial view of what was on the table.</div></div>
+
+    <div class="arg"><h4><span class="num">2</span>The damage has been real but smaller than feared, and the economy is adapting</h4>
+    <p>The Bank of Canada found that the industries facing sector-specific U.S. tariffs account for about 1% of Canadian output and employment and roughly 15% of exports; steel exports fell by half, but aluminum rebounded, copper exports were 40% above their 2024 average, and motor vehicles held roughly steady.<a class="c" href="#s22" title="Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries">[22]</a> The PBO’s own note says non-energy export volumes in Q2 2026 were just 1.1% below its pre-tariff baseline — a smaller decline than its tariff model implies — and that exports to non-U.S. destinations were 51% above their 2024 monthly average by August 2026 (versus +10.5% to the U.S.).<a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a></p>
+    <div class="counter"><b>Strongest objection</b> A chunk of the non-U.S. export growth is gold, and the PBO still projects a 1.4% hit to GDP after five years (see section 5).<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a><a class="c" href="#s33" title="Statistics Canada, The Daily — Canadian international merchandise trade, August 2026">[33]</a><a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a></div></div>
+
+    <div class="arg"><h4><span class="num">3</span>It builds national unity, and may have helped Carney’s mandate and stabilised the federation</h4>
+    <p>Three-in-four Canadians (76%) said walking away from the talks in August 2026 was the right call, a majority in every province including 65% in Saskatchewan and 67% in Alberta; 64% believe Canada will emerge stronger by reducing dependence on the U.S.<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a> In October 2026 Alberta voters rejected starting a separation process by roughly 75% to 25%, widely read as a boost for Carney’s hand against the U.S.<a class="c" href="#s35" title="AP News — Alberta voters overwhelmingly reject separation process">[35]</a> The Abacus survey finds that the share who actually cancelled a U.S. trip rose from 32% to 52% of those for whom a trip was on the table.<a class="c" href="#s20" title="Abacus Data (Oct 1, 2026) — Nineteen months on, the Buy Canadian shopper has not gone home">[20]</a></p>
+    <div class="counter"><b>Strongest objection</b> Unity at the polls isn’t the same as policy results; the same Angus Reid poll finds 38% of workers worried about their jobs and 89% worried about prices.<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a></div></div>
+
+    <div class="arg"><h4><span class="num">4</span>Diversification is overdue — the shock is forcing the structural change Canada never got to by choice</h4>
+    <p>The U.S. share of goods exports fell from 75.9% to 71.7% in 2025, the lowest since the early 1980s.<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a> The government says it has signed more than 20 trade and security deals across five continents;<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a> the China arrangement allows 49,000 Chinese EVs at about a 6.1% tariff, with China expected to cut canola tariffs.<a class="c" href="#s23" title="CBC News (Jan 2026) — &#x27;The old order is not coming back,&#x27; Carney says at Davos">[23]</a><a class="c" href="#s24" title="BBC News — China says Canada deal does not target the US after Trump tariff threat">[24]</a> Verheul argues Canada’s “second main source of leverage” is exactly this de-risking, and that it must keep building “East-West” bridges.<a class="c" href="#s38" title="C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future">[38]</a></p>
+    <div class="counter"><b>Strongest objection</b> The BoC says many firms find diversification hard because of distance and transport costs, and the U.S. still takes roughly 70% of exports.<a class="c" href="#s22" title="Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries">[22]</a><a class="c" href="#s33" title="Statistics Canada, The Daily — Canadian international merchandise trade, August 2026">[33]</a></div></div>
+
+    <div class="arg"><h4><span class="num">5</span>The costs fall on the U.S. too — and that’s where the leverage is</h4>
+    <p>U.S. distillers lost nearly 1,000 jobs (3.5% of their workforce) between Sept 2024 and Sept 2025, the Distilled Spirits Council says, and Brown-Forman reported Canadian organic net sales down more than 60% in the first half of fiscal 2026.<a class="c" href="#s21" title="The Deep Dive (May 11, 2026) — Canada&#x27;s Booze Bans Wiped Out $536M in US Alcohol Exports (citing Distilled Spirits Council testimony)">[21]</a> Reuters reports tariffs on Canada have become a political liability in U.S. border states and that Republican candidates there are calling for an end to the trade war.<a class="c" href="#s13" title="Reuters via Investing.com (Oct 26, 2026) — US, Canada working on deal to ease steel, auto tariffs, sources say">[13]</a> Verheul notes “a large majority” of U.S. economic actors support continued free trade with Canada and are becoming more vocal.<a class="c" href="#s38" title="C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future">[38]</a></p>
+    <div class="counter"><b>Strongest objection</b> Verheul himself writes that Canada “does not have ‘dominance’” in an escalating tariff war — “they can hurt us more than we can hurt them.”<a class="c" href="#s38" title="C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future">[38]</a></div></div>
+
+    <div class="arg"><h4><span class="num">6</span>It is defensive, proportionate and not a boycott of Americans</h4>
+    <p>Howe’s elbows were for warding off attackers.<a class="c" href="#s18" title="CBC News — #ElbowsUp: Why have Canadians chosen hockey as the symbol of our national unity?">[18]</a> Carney’s own formulation is “we didn’t ask for this fight,”<a class="c" href="#s16" title="The Conversation — Why Gordie Howe&#x27;s elbows are Canada&#x27;s answer to Donald Trump">[16]</a> and Mike Myers says “we can love Americans and not want to be Americans.”<a class="c" href="#s19" title="CBC News (Jul 1, 2025) — Mike Myers on elbows up">[19]</a> The 2026 counter-tariffs were framed as matching, not exceeding, the U.S. list (C$27.6B), with a $7.5B support package, and Carney said Canada acted “reluctantly.”<a class="c" href="#s34" title="CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator">[34]</a><a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a></p>
+    <div class="counter"><b>Strongest objection</b> “Proportionate” is hard to square with the U.S. response of an import ban — in effect, retaliation against retaliation.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div></div>
+  </div>
+</section>
+
+<!-- ============ 5 AGAINST ============ -->
+<section id="against">
+  <h2 class="rv"><span class="n">5</span>Steelman: the case <em>against</em> “Elbows Up”</h2>
+  <p class="rv">This is the best version of the argument as critics make it — they include economists, parts of industry, and people who agree with the goals but not the tactics.</p>
+
+  <div class="side against rv">
+    <div class="arg"><h4><span class="num">1</span>The asymmetry is brutal: Canada can’t win a tariff war of attrition</h4>
+    <p>Roughly 70% of Canada’s goods exports go to the U.S.<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a><a class="c" href="#s33" title="Statistics Canada, The Daily — Canadian international merchandise trade, August 2026">[33]</a> The PBO estimates the trade measures since early 2025 reduce real GDP by 1.4% after five years, with up to 185,000 fewer jobs (0.9%) if the tariffs are permanent — a scenario-based estimate, not a forecast.<a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a> It also estimates that the 2026 round lifted the effective U.S. tariff on Canadian goods from 5.3% to 7.7%, while Canada’s on U.S. goods rose from 1.6% to 3.0%.<a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a> A Globe and Mail commentary cites Bank of Canada and Peterson Institute models as showing that Canadian retaliation hurts Canada even more than it hurts the U.S., a price “worth paying” only if it changes U.S. behaviour.<a class="c" href="#s59" title="The Globe and Mail (commentary) — Mark Carney had no choice but to go &#x27;elbows down&#x27; – all our allies already have">[59]</a></p>
+    <div class="counter"><b>Strongest reply</b> The PBO itself notes firms are adapting faster than its model assumes, and Q2 2026 exports were closer to baseline than expected.<a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a></div></div>
+
+    <div class="arg"><h4><span class="num">2</span>Counter-tariffs tax Canadians — and didn’t visibly change U.S. policy</h4>
+    <p>Business groups warned consumers would bear the costs; grocers said rural and northern communities were hit hardest;<a class="c" href="#s60" title="The Globe and Mail — As Canada lifts countertariffs on American goods, what does it mean for consumers?">[60]</a> manufacturers said they paid tariffs on U.S. inputs and again when exporting products made from them.<a class="c" href="#s61" title="The Logic — Elbows down? Canada&#x27;s retaliation against Trump&#x27;s tariffs is getting complicated">[61]</a> A CBC analysis in August 2025 said it was not obvious the retaliation was registering as much of an incentive in Washington.<a class="c" href="#s6" title="CBC News (Aug 2025) — Unfortunately, there may not be a hockey analogy for the challenge Canada faces">[6]</a> Carney said retaliation was meant “to incentivize a negotiated settlement,” and CBC reported he argued the tariffs had become a sticking point in talks.<a class="c" href="#s3" title="Prime Minister of Canada (Aug 22, 2025) — Statement on Canada–U.S. trade">[3]</a><a class="c" href="#s4" title="CBC News — Most of Canada&#x27;s retaliatory tariffs are gone. Now what?">[4]</a> In 2026, the 15–50% counter-tariffs prompted a U.S. import ban on about US$1B of Canadian goods.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></p>
+    <div class="counter"><b>Strongest reply</b> Unifor’s Lana Payne: “Walking back counter-tariffs isn’t an olive branch. It only enables more U.S. aggression.”<a class="c" href="#s62" title="CBC News — Carney ends most counter-tariffs as Trump trade talks continue (Unifor reaction)">[62]</a></div></div>
+
+    <div class="arg"><h4><span class="num">3</span>Provincial liquor bans handed Washington a legal talking point</h4>
+    <p>The Section 338 proclamations cite “discrimination” in three areas: auto tariffs/quotas, dairy quotas, and provincial removals of U.S. alcohol (“all but two Canadian provinces and territories have halted the purchase, distribution, or retailing of U.S. alcoholic beverages”).<a class="c" href="#s8" title="The White House (Jul 20, 2026) — Fact Sheet: President Trump Imposes Additional Tariffs on Canada">[8]</a> USTR has called the bans a “serious concern,” and Greer has said lifting them is a key condition for a successful CUSMA review.<a class="c" href="#s21" title="The Deep Dive (May 11, 2026) — Canada&#x27;s Booze Bans Wiped Out $536M in US Alcohol Exports (citing Distilled Spirits Council testimony)">[21]</a> Ontario Premier Doug Ford says U.S. booze would return “in a heartbeat” for a fair deal for steel, auto and manufacturing workers.<a class="c" href="#s14" title="CBC News (Oct 26, 2026) — Canada-U.S. trade talks intensifying but wide gap remains, sources say">[14]</a> So a symbolic, consumer-facing gesture became part of the U.S. legal case — while Ontario spent $8M storing unsold stock.<a class="c" href="#s28" title="CBC News — Ontario runs $8M tab storing U.S. alcohol">[28]</a></p>
+    <div class="counter"><b>Strongest reply</b> The U.S. escalated on several fronts in 2025 and 2026 (steel, autos, lumber, copper), not just alcohol, so removing the bans might not have changed the outcome.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a></div></div>
+
+    <div class="arg"><h4><span class="num">4</span>Consumer patriotism has a ceiling — price still decides</h4>
+    <p>Leger (Sept 2026): price is the first factor in switching to Canadian products (67%); almost half would pick Canadian only if it cost the same or less, and just 9% would pay more than a 10% premium.<a class="c" href="#s63" title="Leger (Sep 8, 2026) — The Trade War Is Back. Is Buy Canadian Back Too?">[63]</a> Abacus: six in ten still assume Canadian-made means paying more; the public cannot reliably tell which brands are Canadian (e.g., Costco is seen as American by 75%, Boston Pizza as Canadian by only 47%); only one in five will buy Canadian when it costs noticeably more.<a class="c" href="#s20" title="Abacus Data (Oct 1, 2026) — Nineteen months on, the Buy Canadian shopper has not gone home">[20]</a> And 72% recognise that many American-made goods contain Canadian ingredients or parts — a reminder of how integrated supply chains are.<a class="c" href="#s20" title="Abacus Data (Oct 1, 2026) — Nineteen months on, the Buy Canadian shopper has not gone home">[20]</a></p>
+    <div class="counter"><b>Strongest reply</b> Abacus finds behaviour has <em>risen</em> on every measure it tracks, 19 months in — “the boycott hardened into a habit.”<a class="c" href="#s20" title="Abacus Data (Oct 1, 2026) — Nineteen months on, the Buy Canadian shopper has not gone home">[20]</a></div></div>
+
+    <div class="arg"><h4><span class="num">5</span>The slogan oversells what’s deliverable — and could box in negotiators</h4>
+    <p>CBC noted what matters now is “not how well we wield our elbows, but whether we put the puck in the net.”<a class="c" href="#s6" title="CBC News (Aug 2025) — Unfortunately, there may not be a hockey analogy for the challenge Canada faces">[6]</a> A hockey metaphor can pressure leaders to look tough rather than strike the best deal: Canada has already faced “elbows down” attacks when it adjusted, and its chief negotiator acknowledged “in no case has any country been able to secure an agreement unless they agreed that U.S. goods were going to enter into their market tariff-free.”<a class="c" href="#s6" title="CBC News (Aug 2025) — Unfortunately, there may not be a hockey analogy for the challenge Canada faces">[6]</a><a class="c" href="#s34" title="CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator">[34]</a> Meanwhile, workers are paying the price: the industries hit hardest are steel, aluminum, forestry, and auto — the regions with the most to lose from a no-deal outcome.<a class="c" href="#s36" title="Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures">[36]</a> Angus Reid cites industry experts predicting a no-deal situation could cost 0.4% of GDP and as many as 90,000 jobs.<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a></p>
+    <div class="counter"><b>Strongest reply</b> Canadians have told pollsters they would rather hold out: 69% said Carney showed “strength” by refusing terms he thought bad.<a class="c" href="#s49" title="Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks">[49]</a></div></div>
+
+    <div class="arg"><h4><span class="num">6</span>It may entrench the very dependence it aims to reduce — and the U.S. isn’t the only risk</h4>
+    <p>Many “diversification” steps (e.g., the China EV/canola deal) carry their own geopolitical risk — Carney stressed it is not a free-trade agreement and China said it does not target the U.S., but Trump had threatened tariffs over it.<a class="c" href="#s24" title="BBC News — China says Canada deal does not target the US after Trump tariff threat">[24]</a> Canada says the U.S. sought to constrain its ability to strike other trade deals; USTR’s Greer says there was no such requirement in the text, only a discussion of aligning tariffs so Canada isn’t a “backdoor” for other countries’ steel.<a class="c" href="#s34" title="CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator">[34]</a> Either way, “elbows up” is tied to one hard question: <em>what would Canada give up for tariff relief?</em></p>
+    <div class="counter"><b>Strongest reply</b> Diversifying is lower-risk than concentrating 70% of exports in one market that has already shown it will use access as leverage.<a class="c" href="#s32" title="Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025">[32]</a></div></div>
+  </div>
+
+  <div class="card rv"><b>Common ground (editor’s summary, not a sourced finding)</b>
+    <ul>
+      <li>The U.S. measures are the source of most of the damage; the debate is about <em>Canada’s</em> best response.</li>
+      <li>Diversification and domestic trade-barrier reduction are good ideas regardless of the trade war.</li>
+      <li>A deal must be good for Canadian workers; Carney says there are “very clear bottom lines, red lines.”<a class="c" href="#s14" title="CBC News (Oct 26, 2026) — Canada-U.S. trade talks intensifying but wide gap remains, sources say">[14]</a></li>
+      <li>Short-term pain is real; the disagreement is how much leverage Canada has to reduce it.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="watch">
+  <h2 class="rv">What to watch next</h2>
+  <div class="tw rv"><table>
+    <tr><th>Date</th><th>What</th><th>Why it matters</th></tr>
+    <tr><td>Oct 30, 2026</td><td>U.S. modifies its 50% Section 338 list (some goods out, some in)</td><td>Shows whether Washington is adjusting for political reasons.<a class="c" href="#s7" title="Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents">[7]</a><a class="c" href="#s14" title="CBC News (Oct 26, 2026) — Canada-U.S. trade talks intensifying but wide gap remains, sources say">[14]</a></td></tr>
+    <tr><td>Nov 3, 2026</td><td>U.S. midterm elections</td><td>Both sides say a steel/auto deal is possible beforehand; Canada’s sources call it “a narrowed deal, if it even happens.”<a class="c" href="#s13" title="Reuters via Investing.com (Oct 26, 2026) — US, Canada working on deal to ease steel, auto tariffs, sources say">[13]</a></td></tr>
+    <tr><td>Nov 4, 2026</td><td>Statistics Canada’s September trade data</td><td>First look at effects of the Sept 8 counter-tariffs and the Sept 29 import ban.<a class="c" href="#s33" title="Statistics Canada, The Daily — Canadian international merchandise trade, August 2026">[33]</a></td></tr>
+    <tr><td>Jan 12, 2027</td><td>Deadline for U.S. public comments for the 2027 USMCA joint review</td><td>The annual-review clock is now running.<a class="c" href="#s10" title="Federal Register (Oct 5, 2026) — Request for Public Comments … Relating to the Operation of the [USMCA]">[10]</a></td></tr>
+    <tr><td>2027 (date TBD)</td><td>Next annual CUSMA joint review</td><td>An extension needs all three countries to confirm.<a class="c" href="#s10" title="Federal Register (Oct 5, 2026) — Request for Public Comments … Relating to the Operation of the [USMCA]">[10]</a></td></tr>
+  </table></div>
+  <div class="card note rv"><b>Bottom line.</b> “Elbows up” is two things at once: a mood (nearly all Canadians want to resist being pushed around) and a bundle of policies (boycotts, counter-tariffs, diversification) whose costs and benefits are contested. Both the case for and against hold up on the evidence we have; people weigh the risk differently depending on how much they trust that the U.S. can be pressured, versus how much they fear being hurt by trying.</div>
+</section>
+
+<section id="sources">
+  <h2 class="rv">Sources</h2>
+  <p>Numbers marked with a bracketed number link to the entry below. Opinion poll numbers are poll results (with margins of error in the original), PBO numbers are model-based scenarios, and the White House and Federal Register entries are the U.S. government’s own account.</p>
+  <ol class="src">
+  <li id="s1"><a href="https://www.canada.ca/en/department-finance/news/2025/06/canada-rescinds-digital-services-tax-to-advance-broader-trade-negotiations-with-the-united-states.html" target="_blank" rel="noopener">Department of Finance Canada (Jun 29, 2025) — Canada rescinds digital services tax</a></li>
+<li id="s2"><a href="https://www.reuters.com/world/americas/canada-rescinds-digital-services-tax-bid-advance-trade-talks-with-us-2025-06-30/" target="_blank" rel="noopener">Reuters (Jun 30, 2025) — US, Canada to resume trade talks after Ottawa drops digital tax</a></li>
+<li id="s3"><a href="https://www.pm.gc.ca/en/news/statements/2025/08/22/statement-prime-minister-can-us" target="_blank" rel="noopener">Prime Minister of Canada (Aug 22, 2025) — Statement on Canada–U.S. trade</a></li>
+<li id="s4"><a href="https://www.cbc.ca/news/politics/most-retaliatory-tariffs-removed-1.7620036" target="_blank" rel="noopener">CBC News — Most of Canada&#x27;s retaliatory tariffs are gone. Now what?</a></li>
+<li id="s5"><a href="https://globaltaxnews.ey.com/news/2025-1890-canada-removing-tariffs-on-certain-us-goods-canadian-business-support-measures-announced" target="_blank" rel="noopener">EY Global Tax News (Sep 19, 2025) — Canada removing tariffs on certain US goods</a></li>
+<li id="s6"><a href="https://www.cbc.ca/news/politics/carney-retaliatory-tariffs-analysis-1.7616050" target="_blank" rel="noopener">CBC News (Aug 2025) — Unfortunately, there may not be a hockey analogy for the challenge Canada faces</a></li>
+<li id="s7"><a href="https://www.blakes.com/insights/us-canada-tariffs-timeline-of-key-dates-and-documents/" target="_blank" rel="noopener">Blakes (updated Oct 26, 2026) — U.S.–Canada Tariffs: Timeline of Key Dates and Documents</a></li>
+<li id="s8"><a href="https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/" target="_blank" rel="noopener">The White House (Jul 20, 2026) — Fact Sheet: President Trump Imposes Additional Tariffs on Canada</a></li>
+<li id="s9"><a href="https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review" target="_blank" rel="noopener">USTR (Jul 1, 2026) — Ambassador Greer Issues Statement on the USMCA Joint Review</a></li>
+<li id="s10"><a href="https://www.federalregister.gov/documents/2026/10/05/2026-20341/request-for-public-comments-and-notice-of-public-hearing-relating-to-the-operation-of-the-agreement" target="_blank" rel="noopener">Federal Register (Oct 5, 2026) — Request for Public Comments … Relating to the Operation of the [USMCA]</a></li>
+<li id="s11"><a href="https://www.cbc.ca/news/politics/what-next-cusma-usmca-us-canada-mexico-trump-tariffs-9.7255435" target="_blank" rel="noopener">CBC News (Jul 2, 2026) — Trump isn&#x27;t extending CUSMA trade deal, so what happens now?</a></li>
+<li id="s12"><a href="https://www.icpainc.org/usmca-joint-review-tracker-home/" target="_blank" rel="noopener">ICPA — USMCA Joint Review Tracker (2026 status)</a></li>
+<li id="s13"><a href="https://www.investing.com/news/economy-news/exclusiveus-canada-working-on-deal-to-ease-steel-auto-tariffs-sources-say-4973470" target="_blank" rel="noopener">Reuters via Investing.com (Oct 26, 2026) — US, Canada working on deal to ease steel, auto tariffs, sources say</a></li>
+<li id="s14"><a href="https://www.cbc.ca/news/politics/trade-talks-intensifying-no-deal-in-sight-9.7396332" target="_blank" rel="noopener">CBC News (Oct 26, 2026) — Canada-U.S. trade talks intensifying but wide gap remains, sources say</a></li>
+<li id="s15"><a href="https://www.cbc.ca/news/canada/ottawa/elbows-up-rallying-cry-evokes-memories-of-mr-hockey-1.7453276" target="_blank" rel="noopener">CBC News (Mar 6, 2025) — &#x27;Elbows up&#x27; rallying cry evokes memories of Mr. Hockey</a></li>
+<li id="s16"><a href="https://theconversation.com/why-gordie-howes-elbows-are-canadas-answer-to-donald-trump-252167" target="_blank" rel="noopener">The Conversation — Why Gordie Howe&#x27;s elbows are Canada&#x27;s answer to Donald Trump</a></li>
+<li id="s17"><a href="https://www.theglobeandmail.com/canada/article-elbows-up-canada/" target="_blank" rel="noopener">The Globe and Mail — Why &#x27;elbows up&#x27; is Canada&#x27;s rallying cry</a></li>
+<li id="s18"><a href="https://www.cbc.ca/news/canada/newfoundland-labrador/elbows-up-explained-1.7494878" target="_blank" rel="noopener">CBC News — #ElbowsUp: Why have Canadians chosen hockey as the symbol of our national unity?</a></li>
+<li id="s19"><a href="https://www.cbc.ca/news/canada/mike-myers-interview-elbows-up-1.7574635" target="_blank" rel="noopener">CBC News (Jul 1, 2025) — Mike Myers on elbows up</a></li>
+<li id="s20"><a href="https://abacusdata.ca/nineteen-months-on-the-buy-canadian-shopper-has-not-gone-home/" target="_blank" rel="noopener">Abacus Data (Oct 1, 2026) — Nineteen months on, the Buy Canadian shopper has not gone home</a></li>
+<li id="s21"><a href="https://thedeepdive.ca/canadas-booze-bans-wiped-out-536m-in-us-alcohol-exports/" target="_blank" rel="noopener">The Deep Dive (May 11, 2026) — Canada&#x27;s Booze Bans Wiped Out $536M in US Alcohol Exports (citing Distilled Spirits Council testimony)</a></li>
+<li id="s22"><a href="https://www.bankofcanada.ca/publications/mpr/mpr-2026-04-29/in-focus-2/" target="_blank" rel="noopener">Bank of Canada, Monetary Policy Report (Apr 2026) — One year later: impact of US trade restrictions on Canadian industries</a></li>
+<li id="s23"><a href="https://www.cbc.ca/news/politics/carney-davos-speech-9.7052725" target="_blank" rel="noopener">CBC News (Jan 2026) — &#x27;The old order is not coming back,&#x27; Carney says at Davos</a></li>
+<li id="s24"><a href="https://www.bbc.com/news/articles/ce8r4kxgpx6o" target="_blank" rel="noopener">BBC News — China says Canada deal does not target the US after Trump tariff threat</a></li>
+<li id="s25"><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260911/cg-b003-png-eng.htm" target="_blank" rel="noopener">Statistics Canada — Canadian-resident return trips, August, 2024 to 2026 (Chart 3)</a></li>
+<li id="s26"><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260922/dq260922a-eng.htm" target="_blank" rel="noopener">Statistics Canada, The Daily — Travel between Canada and other countries, July 2026</a></li>
+<li id="s27"><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/260323/dq260323a-eng.pdf" target="_blank" rel="noopener">Statistics Canada, The Daily — Travel between Canada and other countries, January 2026</a></li>
+<li id="s28"><a href="https://www.cbc.ca/news/canada/lcbo-american-products-removal-ontario-liquor-9.7264586" target="_blank" rel="noopener">CBC News — Ontario runs $8M tab storing U.S. alcohol</a></li>
+<li id="s29"><a href="https://www.foxnews.com/politics/trump-suggests-canada-become-51st-state-after-trudeau-said-tariff-would-kill-economy-sources" target="_blank" rel="noopener">Fox News (Dec 2024) — Trump suggests Canada become 51st state … sources say</a></li>
+<li id="s30"><a href="https://www.cbc.ca/news/politics/trudeau-poilievre-leader-briefing-mar-a-lago-1.7399534" target="_blank" rel="noopener">CBC News (Dec 2024) — Trump&#x27;s quip about Canada becoming 51st state was a joke, says minister</a></li>
+<li id="s31"><a href="https://www.nbcnews.com/politics/donald-trump/trump-mocks-prime-minister-justin-trudeau-governor-great-state-canada-rcna183570" target="_blank" rel="noopener">NBC News (Dec 2024) — Trump mocks Trudeau as &#x27;governor&#x27; of the &#x27;Great State of Canada&#x27;</a></li>
+<li id="s32"><a href="https://international.canada.ca/en/global-affairs/corporate/reports/chief-economist/monthly/2025-12" target="_blank" rel="noopener">Global Affairs Canada, Office of the Chief Economist — Monthly trade report: December 2025</a></li>
+<li id="s33"><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/261006/dq261006a-eng.htm" target="_blank" rel="noopener">Statistics Canada, The Daily — Canadian international merchandise trade, August 2026</a></li>
+<li id="s34"><a href="https://www.cbc.ca/news/politics/canada-us-trade-talks-tariffs-trump-lutnick-greer-carney-janice-charette-9.7324707" target="_blank" rel="noopener">CBC News (Aug 28, 2026) — What went wrong with U.S. trade talks, according to Canada&#x27;s chief negotiator</a></li>
+<li id="s35"><a href="https://apnews.com/article/alberta-canada-referendum-indepence-carney-ed0d58ef051859ce12052e75d2d6e8a0" target="_blank" rel="noopener">AP News — Alberta voters overwhelmingly reject separation process</a></li>
+<li id="s36"><a href="https://www.pbo-dpb.ca/en/publications/NT-2627-014-S--economic-fiscal-outlook-assessment-note-economic-impact-recent-canada-us-trade-measures--note-evaluation-perspectives-economiques-financieres-incidence-economique-recentes-mesures-commercia" target="_blank" rel="noopener">Parliamentary Budget Officer (Oct 20, 2026) — Economic Impact of Recent Canada-U.S. Trade Measures</a></li>
+<li id="s37"><a href="https://www.federalregister.gov/documents/full_text/html/2026/07/23/2026-14997.html" target="_blank" rel="noopener">Federal Register (Jul 23, 2026) — Imposing Additional Duties To Offset Canadian Discrimination … Motor Vehicles</a></li>
+<li id="s38"><a href="https://cdhowe.org/publication/why-canada-walked-away-and-what-to-consider-for-the-future/" target="_blank" rel="noopener">C.D. Howe Institute (Aug 28, 2026) — Steve Verheul, Why Canada Walked Away, And What to Consider for the Future</a></li>
+<li id="s39"><a href="https://parks.canada.ca/lhn-nhs/qc/wilfridlaurier/culture/histoire-history/personnages-people/natcul6" target="_blank" rel="noopener">Parks Canada — Sir Wilfrid Laurier National Historic Site: The end of a long reign</a></li>
+<li id="s40"><a href="http://acitygoestowar.ca/1911-election-reciprocity/" target="_blank" rel="noopener">A City Goes to War — 1911 Election: Reciprocity</a></li>
+<li id="s41"><a href="https://diefenbaker.usask.ca/exhibits/online-exhibits-content/the-crown-in-canada-en.php" target="_blank" rel="noopener">Diefenbaker Canada Centre — The Crown in Canada (incl. Aug 12, 1957 Bryce memo)</a></li>
+<li id="s42"><a href="https://doi.org/10.7202/030500ar" target="_blank" rel="noopener">Études internationales — From Dreams to Reality: The Evolution of Anglo-Canadian Trade During the Diefenbaker Era</a></li>
+<li id="s43"><a href="https://thecanadianencyclopedia.ca/en/article/canada-us-automotive-products-agreement" target="_blank" rel="noopener">The Canadian Encyclopedia — Canada-US Auto Pact</a></li>
+<li id="s44"><a href="https://thecanadianencyclopedia.ca/en/article/third-option" target="_blank" rel="noopener">The Canadian Encyclopedia — Third Option</a></li>
+<li id="s45"><a href="https://thecanadianencyclopedia.ca/en/article/national-energy-program" target="_blank" rel="noopener">The Canadian Encyclopedia — National Energy Program</a></li>
+<li id="s46"><a href="https://publications.gc.ca/collections/collection_2011/bdp-lop/bp/2011-42-eng.pdf" target="_blank" rel="noopener">Library of Parliament — The Foreign Investment Review Process in Canada</a></li>
+<li id="s47"><a href="https://www.ipu.org/parline-e/reports/arc/2055_88.htm" target="_blank" rel="noopener">IPU Parline — Canada: House of Commons, 1988 election results</a></li>
+<li id="s48"><a href="https://thecanadianencyclopedia.ca/en/article/election-1988-feature" target="_blank" rel="noopener">The Canadian Encyclopedia — Election of 1988</a></li>
+<li id="s49"><a href="https://angusreid.org/resolve-apprehension-76-say-canada-was-right-to-ditch-trade-talks-but-two-in-five-have-fear-for-their-jobs/" target="_blank" rel="noopener">Angus Reid Institute (Aug 23, 2026) — 76% say Canada was right to ditch trade talks</a></li>
+<li id="s50"><a href="https://www.everycrsreport.com/reports/RL33752.html" target="_blank" rel="noopener">Congressional Research Service — Softwood Lumber Imports from Canada: Issues and Events</a></li>
+<li id="s51"><a href="https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/measures-steel-aluminum-businesses/countermeasures-response-unjustified-tariffs-canadian-steel-aluminum-products.html" target="_blank" rel="noopener">Department of Finance Canada — Countermeasures in Response to Unjustified Tariffs on Canadian Steel and Aluminum Products (archived)</a></li>
+<li id="s52"><a href="https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn19-09-eng.html" target="_blank" rel="noopener">CBSA — Customs Notice 19-09: Repeal of the United States Surtax Orders (2019)</a></li>
+<li id="s53"><a href="https://www.cnbc.com/2012/10/09/japan-economy-shaky-as-island-spat-hits-business.html" target="_blank" rel="noopener">CNBC (Oct 2012) — Japan economy shaky as island spat hits business</a></li>
+<li id="s54"><a href="https://www.reuters.com/business/media-telecom/japan-counts-cost-chinas-travel-boycott-tensions-flare-2025-11-19/" target="_blank" rel="noopener">Reuters (Nov 19, 2025) — Japan counts cost of China&#x27;s travel boycott as tensions flare</a></li>
+<li id="s55"><a href="https://www.straitstimes.com/asia/east-asia/china-keeps-buying-sushi-japans-cars-as-xi-keeps-spat-in-check" target="_blank" rel="noopener">The Straits Times — China&#x27;s consumers still buying sushi, Japanese cars as Xi keeps spat in check</a></li>
+<li id="s56"><a href="https://apnews.com/article/denmark-greenland-trump-boycott-apps-93071df9a5b8aec8116c37730d175a46" target="_blank" rel="noopener">AP News — Apps to boycott US goods gained traction in crisis over Greenland</a></li>
+<li id="s57"><a href="https://coopanalyse.dk/analyse/02_amerikanske-varer/" target="_blank" rel="noopener">Coop Analyse (Denmark) — Danskerne boykotter mad, ikke underholdning</a></li>
+<li id="s58"><a href="https://www.dr.dk/nyheder/indland/naar-trump-er-stille-glemmer-kunder-boykotte-varer-fra-usa" target="_blank" rel="noopener">DR (Denmark) — Når Trump er stille, glemmer kunder at boykotte varer fra USA</a></li>
+<li id="s59"><a href="https://www.theglobeandmail.com/business/commentary/article-mark-carney-had-no-choice-but-to-go-elbows-down-all-our-allies-already/" target="_blank" rel="noopener">The Globe and Mail (commentary) — Mark Carney had no choice but to go &#x27;elbows down&#x27; – all our allies already have</a></li>
+<li id="s60"><a href="https://www.theglobeandmail.com/canada/article-countertariffs-lift-american-goods-what-does-it-mean-for-consumers/" target="_blank" rel="noopener">The Globe and Mail — As Canada lifts countertariffs on American goods, what does it mean for consumers?</a></li>
+<li id="s61"><a href="https://thelogic.co/news/elbows-down-canadas-retaliation-against-trumps-tariffs-is-getting-complicated/" target="_blank" rel="noopener">The Logic — Elbows down? Canada&#x27;s retaliation against Trump&#x27;s tariffs is getting complicated</a></li>
+<li id="s62"><a href="https://www.cbc.ca/lite/story/9.6876782" target="_blank" rel="noopener">CBC News — Carney ends most counter-tariffs as Trump trade talks continue (Unifor reaction)</a></li>
+<li id="s63"><a href="https://leger360.com/the-trade-war-is-back-buy-canadian/" target="_blank" rel="noopener">Leger (Sep 8, 2026) — The Trade War Is Back. Is Buy Canadian Back Too?</a></li>
+  </ol>
+</section>
+</main>
+
+<footer><div class="wrap">Built Oct 27, 2026 as a neutral explainer. All facts are from the linked sources; diagrams marked “illustrative” are visual aids only. This page makes no endorsement of either side.</div></footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv, .bars-wrap, #htl-wrap, .tl');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+  // bars inside non-.rv containers
+  document.querySelectorAll('.card:has(.bars), .bars').forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
